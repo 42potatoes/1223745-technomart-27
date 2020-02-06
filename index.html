@@ -14,7 +14,7 @@
         <div class="header-items">
           <div class="item-search">
             <label for="search">Поиск</label>
-            <input type="search" name="search" id="search">
+            <input type="search" name="search" id="search" placeholder="Поиск">
           </div>
           <div class="header-items__bookmarks">
             <a class="analog-text" href="#">Закладки</a>
@@ -324,7 +324,7 @@
           <p class="info-section">Вы можете забрать товар сами,<br>
              заехав в наш офис:</p><br>
           <a href="#">
-            <img src="img/map.jpg" alt="Карта офиса"><br>
+            <img src="img/map.jpg" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, город Санкт-Петербург"><br>
           </a>
           <button>заблудились? напишите нам!</button>
         </section>
@@ -394,15 +394,27 @@
 
     </footer>
 
-    <section>
-      <h2>напишите нам</h2>
-      <p>Ваше имя:</p>
-      <!--здесь будет форма "имя фамилия"-->
-      <p>Ваш e-mail:</p><br>
-      <!--здесь будет форма e-mail -->
-      <p>Текст письма:</p>
-      <!--здесь будет форма текст письма-->
-      <button type="button">отправить</button>
+    <section class="form-write-us">
+      <h3 class="visually-hidden">напишите нам</h3>
+      <div class="window-form">
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="window-form__items">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="window-form__items">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="email@example.com">
+          </div>
+          <div class="window-form__text">
+            <label for="comment">Текст письма</label>
+            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="window-form__btn">
+            <button type="submit">отправить</button>
+          </div>
+        </form>
+      </div>
     </section>
 
   </body>
