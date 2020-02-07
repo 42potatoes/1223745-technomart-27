@@ -13,17 +13,23 @@
         </div>
         <div class="header-items">
           <div class="item-search">
-            <label for="search">Поиск</label>
-            <input type="search" name="search" id="search" placeholder="Поиск">
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input type="search" name="search" id="search" placeholder="Поиск">
+              <span class="header-style-icon icon-search"></span>
+            </form>
           </div>
           <div class="header-items__bookmarks">
             <a class="analog-text" href="#">Закладки</a>
+            <span class="header-style-icon icon-bookmarks"></span>
           </div>
           <div class="header-items__recycle">
             <a class="analog-text" href="#">Корзина</a>
+            <span class="header-style-icon icon-recycle"></span>
           </div>
           <div class="header-items__order">
             <a class="analog-text" href="#">Оформить заказ</a>
+            <span class="header-style-icon icon-order"></span>
           </div>
         </div>
       </div>
@@ -37,7 +43,7 @@
         </div>
 
         <div class="header-contacts">
-          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55<span class="icon-tel"></span></a>
           <address class="header-contacts__addr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
 
@@ -45,6 +51,7 @@
           <ul class="reg__list">
             <li class="reg__entry">
               <button type="button">Войти</button>
+              <span class="icon-entry"></span>
             </li>
             <li class="reg__button">
               <button type="button">Регистрация</button>
@@ -381,9 +388,18 @@
           Все права защищены</p>
         <div class="social">
           <ul class="social__list">
-            <li class="social__item"><a href="#" aria-label="Вконтакте"></a></li>
-            <li class="social__item"><a href="#" aria-label="Фейсбук"></a></li>
-            <li class="social__item"><a href="#" aria-label="Твиттер"></a></li>
+            <li class="social__item">
+              <a href="#" aria-label="Вконтакте"></a>
+              <span class="footer-social-icon icon-vk"></span>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Фейсбук"></a>
+              <span class="footer-social-icon icon-fb"></span>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Твиттер"></a>
+              <span class="footer-social-icon icon-tw"></span>
+            </li>
           </ul>
         </div>
         <p class="analog-text">Обратная связь:<br>
@@ -398,6 +414,9 @@
       <h3 class="visually-hidden">напишите нам</h3>
       <div class="window-form">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="window-form__close">
+            <button type="button" aria-label="Закрыть"></button>
+          </div>
           <div class="window-form__items">
             <label for="name">Ваше имя:</label>
             <input type="text" name="name" id="name" placeholder="Имя Фамилия">

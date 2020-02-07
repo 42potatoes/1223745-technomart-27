@@ -13,17 +13,23 @@
         </div>
         <div class="header-items">
           <div class="item-search">
-            <label for="search">Поиск</label>
-            <input type="search" name="search" id="search" placeholder="Поиск">
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input type="search" name="search" id="search" placeholder="Поиск">
+              <span class="header-style-icon icon-search"></span>
+            </form>
           </div>
           <div class="header-items__bookmarks">
             <a class="analog-text" href="#">Закладки</a>
+            <span class="header-style-icon icon-bookmarks"></span>
           </div>
           <div class="header-items__recycle">
             <a class="analog-text" href="#">Корзина</a>
+            <span class="header-style-icon icon-recycle"></span>
           </div>
           <div class="header-items__order">
             <a class="analog-text" href="#">Оформить заказ</a>
+            <span class="header-style-icon icon-order"></span>
           </div>
         </div>
       </div>
@@ -37,13 +43,15 @@
         </div>
 
         <div class="header-contacts">
-          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55<span class="icon-tel"></span></a>
           <address class="header-contacts__addr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
 
+
         <div class="header-registration registration">
-          <a class="registration__login" href="#">Равшан Джамшутович</a>
-          <a class="registration__logout" href="#"></a> <!-- разлогин-->
+          <a class="registration__login" href="#">Равшан Джамшутович<span class="icon-profile"></span></a>
+          <a class="registration__logout" href="#"><span class="icon-logout"></span></a>
+
           <ul class="registration__info">
             <li class="registration__orders">
               <a class="style-font" href="#">Мои заказы</a>
@@ -85,13 +93,13 @@
     <main class="catalog-main">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a class="font-style" href="index.html"></a>
+          <a class="font-style" href="index.html"><span class="icon-home"></span><span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="text-element" href="catalog.html">каталог</a>
+          <a class="text-element" href="catalog.html">каталог<span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="text-element" href="#">инструмент</a>
+          <a class="text-element" href="#">инструмент<span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
           <span class="text-element">перфораторы</span>
@@ -156,8 +164,8 @@
                   сетевые
                 </label>
               </li>
-              <button>показать</button>
             </ul>
+            <button>показать</button>
           </fieldset>
 
         </form>
@@ -363,9 +371,18 @@
           Все права защищены</p>
         <div class="social">
           <ul class="social__list">
-            <li class="social__item"><a href="#" aria-label="Вконтакте"></a></li>
-            <li class="social__item"><a href="#" aria-label="Фейсбук"></a></li>
-            <li class="social__item"><a href="#" aria-label="Твиттер"></a></li>
+            <li class="social__item">
+              <a href="#" aria-label="Вконтакте"></a>
+              <span class="footer-social-icon icon-vk"></span>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Фейсбук"></a>
+              <span class="footer-social-icon icon-fb"></span>
+            </li>
+            <li class="social__item">
+              <a href="#" aria-label="Твиттер"></a>
+              <span class="footer-social-icon icon-tw"></span>
+            </li>
           </ul>
         </div>
         <p class="analog-text">Обратная связь:<br>
@@ -379,10 +396,9 @@
     </footer>
 
     <section class="form-product-added">
-      <h3>Товар добавлен в корзину</h3>
       <div class="form-buy">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <p class="form-buy__info">Товар добавлен в корзину!</p><br>
+        <h3 class="form-buy__info">Товар добавлен в корзину!</h3><br>
         <div class="form-buy_btn">
           <a href="#">оформить заказ</a>
           <button type="button">продолжить покупки</button>
