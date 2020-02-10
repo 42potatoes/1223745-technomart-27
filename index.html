@@ -12,26 +12,25 @@
 
       <div class="header-top">
         <div class="header-logo">
-          <a href="#">техномарт</a>
+          <a class="header-logo__item" href="#">техномарт</a>
         </div>
         <div class="header-items">
           <div class="item-search">
             <form action="https://echo.htmlacademy.ru/courses" method="get">
-              <label for="search">Поиск:</label>
-              <input type="search" name="search" id="search">
-              <button class="header-style-icon icon-search" type="submit" aria-label="кнопка поиска"></button>
+              <label class="visually-hidden" for="search">Поиск:</label>
+              <input class="item-search_input" type="search" name="search" id="search"  placeholder="Поиск:">
             </form>
           </div>
           <div class="header-items__bookmarks">
-            <a class="analog-text-header-footer" href="#">Закладки</a>
+            <a class="analog-text-header" href="#">Закладки:0</a>
             <span class="header-style-icon icon-bookmarks"></span>
           </div>
           <div class="header-items__recycle">
-            <a class="analog-text-header-footer" href="#">Корзина</a>
+            <a class="analog-text-header" href="#">Корзина:0</a>
             <span class="header-style-icon icon-recycle"></span>
           </div>
           <div class="header-items__order">
-            <a class="analog-text-header-footer" href="#">Оформить заказ</a>
+            <a class="analog-text-header" href="#">Оформить заказ</a>
             <span class="header-style-icon icon-order"></span>
           </div>
         </div>
@@ -46,18 +45,17 @@
         </div>
 
         <div class="header-contacts">
-          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55<span class="icon-tel"></span></a>
+          <a class="header-contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <address class="header-contacts__addr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
 
         <div class="header-reg reg">
           <ul class="reg__list">
-            <li class="reg__entry">
-              <button type="button">Войти</button>
-              <span class="icon-entry"></span>
+            <li class="reg__item">
+              <button type="button"><span class="reg__item-btn__text">Войти</span></button>
             </li>
-            <li class="reg__button">
-              <button type="button">Регистрация</button>
+            <li class="reg__item">
+              <button type="button"><span class="reg__item-btn__text">Регистрация</span></button>
             </li>
           </ul>
         </div>
@@ -67,25 +65,25 @@
       <nav class="nav-header">
         <ul class="nav-header__list">
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="index.html">Главная</a>
+            <a class="analog-text-header" href="index.html">Главная</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Компания</a>
+            <a class="analog-text-header" href="#">Компания</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="catalog.html">Каталог</a>
+            <a class="analog-text-header" href="catalog.html">Каталог</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Новости</a>
+            <a class="analog-text-header" href="#">Новости</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Спецпредложения</a>
+            <a class="analog-text-header" href="#">Спецпредложения</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Доставка</a>
+            <a class="analog-text-header" href="#">Доставка</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Контакты</a>
+            <a class="analog-text-header" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -319,14 +317,14 @@
           <h3 class="section-title">компания «техномарт»</h3>
           <p class="text-paragraph-section">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="text-paragraph-section">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
              Техномарт работает со многими транспортными компаниями: </p>
-          <ul>
+          <ul class="section-info-list">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="text-tiles-link-button" href="#">подробнее о компании</a>
+          <a class="section-info__link-red" href="#">подробнее о компании</a>
         </section>
 
         <section class="info-contacts">
@@ -336,7 +334,7 @@
           <a class="info-contacts__map" href="#">
             <img src="img/map.jpg" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, город Санкт-Петербург"><br>
           </a>
-          <button class="text-tiles-link-button" type="button">заблудились? напишите нам!</button>
+          <button class="section-info__btn-red" type="button">заблудились? напишите нам!</button>
         </section>
       </section>
 
@@ -346,26 +344,26 @@
       <div class="footer-address">
         <div class="addr">
           <a class="footer-logo" href="#">техномарт</a>
-          <p class="analog-text-header-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <p class="analog-text-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55</p>
         </div>
 
         <div class="nav-footer products">
           <ul class="nav-footer__list">
-            <li class="nav-footerr__item">
-              <a class="analog-text-header-footer" href="#">Компания</a>
+            <li class="nav-footer__item">
+              <a class="analog-text-footer" href="#">Компания</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Новости</a>
+              <a class="analog-text-footer" href="#">Новости</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="catalog.html">Каталог</a>
+              <a class="analog-text-footer" href="catalog.html">Каталог</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Доставка</a>
+              <a class="analog-text-footer" href="#">Доставка</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Контакты</a>
+              <a class="analog-text-footer" href="#">Контакты</a>
             </li>
           </ul>
 
@@ -405,17 +403,17 @@
             </li>
           </ul>
         </div>
-        <p class="analog-text-header-footer">Обратная связь:<br>
+        <p class="analog-text-footer">Обратная связь:<br>
           <a class="text-footer--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="analog-text-header-footer">Разработано —<br>
+        <p class="analog-text-footer">Разработано —<br>
           <a class="text-footer--yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
 
     </footer>
 
-    <section class="modal-window form-write-us">
+    <section class="modal-window form-write-us visually-hidden">
       <h3 class="visually-hidden">напишите нам</h3>
       <div class="modal-window__close">
         <button type="button" aria-label="Закрыть"></button>

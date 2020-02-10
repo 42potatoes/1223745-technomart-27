@@ -12,27 +12,26 @@
 
       <div class="header-top">
         <div class="header-logo">
-          <a href="#">техномарт</a>
+          <a class="header-logo__item" href="#">техномарт</a>
         </div>
         <div class="header-items">
           <div class="item-search">
             <form action="https://echo.htmlacademy.ru/courses" method="get">
-              <label for="search">Поиск:</label>
-              <input type="search" name="search" id="search">
-              <button class="header-style-icon icon-search" type="submit" aria-label="кнопка поиска"></button>
+              <label class="visually-hidden" for="search">Поиск:</label>
+              <input class="item-search_input" type="search" name="search" id="search"  placeholder="Поиск:">
             </form>
           </div>
           <div class="header-items__bookmarks">
-            ::before
-            <a class="analog-text-header-footer" href="#">Закладки</a>
+            <a class="analog-text-header" href="#">Закладки:0</a>
+            <span class="header-style-icon icon-bookmarks"></span>
           </div>
           <div class="header-items__recycle">
-            ::before
-            <a class="analog-text-header-footer" href="#">Корзина</a>
+            <a class="analog-text-header" href="#">Корзина:0</a>
+            <span class="header-style-icon icon-recycle"></span>
           </div>
           <div class="header-items__order">
-            ::before
-            <a class="analog-text-header-footer" href="#">Оформить заказ</a>
+            <a class="analog-text-header" href="#">Оформить заказ</a>
+            <span class="header-style-icon icon-order"></span>
           </div>
         </div>
       </div>
@@ -70,25 +69,25 @@
       <nav class="nav-header">
         <ul class="nav-header__list">
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="index.html">Главная</a>
+            <a class="analog-text-header" href="index.html">Главная</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Компания</a>
+            <a class="analog-text-header" href="#">Компания</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="catalog.html">Каталог</a>
+            <a class="analog-text-header" href="catalog.html">Каталог</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Новости</a>
+            <a class="analog-text-header" href="#">Новости</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Спецпредложения</a>
+            <a class="analog-text-header" href="#">Спецпредложения</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Доставка</a>
+            <a class="analog-text-header" href="#">Доставка</a>
           </li>
           <li class="nav-header__item">
-            <a class="analog-text-header-footer" href="#">Контакты</a>
+            <a class="analog-text-header" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -333,20 +332,20 @@
 
         <div class="nav-footer products">
           <ul class="nav-footer__list">
-            <li class="nav-footerr__item">
-              <a class="analog-text-header-footer" href="#">Компания</a>
+            <li class="nav-footer__item">
+              <a class="analog-text-footer" href="#">Компания</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Новости</a>
+              <a class="analog-text-footer" href="#">Новости</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="catalog.html">Каталог</a>
+              <a class="analog-text-footer" href="catalog.html">Каталог</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Доставка</a>
+              <a class="analog-text-footer" href="#">Доставка</a>
             </li>
             <li class="nav-footer__item">
-              <a class="analog-text-header-footer" href="#">Контакты</a>
+              <a class="analog-text-footer" href="#">Контакты</a>
             </li>
           </ul>
 
@@ -368,7 +367,7 @@
       </div>
 
       <div class="copyright">
-        <p class="analog-text-header-footer">© 2010–2019 Компания «Техномарт»<br>
+        <p class="copyright__text">© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <div class="social">
           <ul class="social__list">
@@ -386,17 +385,17 @@
             </li>
           </ul>
         </div>
-        <p class="analog-text-header-footer">Обратная связь:<br>
+        <p class="analog-text-footer">Обратная связь:<br>
           <a class="text-footer--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="analog-text-header-footer">Разработано —<br>
+        <p class="analog-text-footer">Разработано —<br>
           <a class="text-footer--yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
 
     </footer>
 
-    <section class="modal-windows">
+    <section class="modal-windows visually-hidden">
       <div class="modal-window__close">
         <button type="button" aria-label="Закрыть"></button>
       </div>
