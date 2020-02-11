@@ -102,7 +102,7 @@ background-color: #f3f7f8;
   background-color: #212a3a;
 }
 
-.item-search_input:active {
+.item-search_input:focus {
   background-color: #ffffff;
 }
 
