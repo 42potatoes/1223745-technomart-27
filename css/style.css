@@ -30,6 +30,7 @@ background-color: #f3f7f8;
 
 .header-logo {
   background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
  .header-logo__item {
@@ -79,6 +80,7 @@ background-color: #f3f7f8;
 
 .nav-header {
   background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
 }
 
 .analog-text-header {
@@ -92,6 +94,14 @@ background-color: #f3f7f8;
 .registration__info {
   list-style: none;
 } /* отключение буллитов списка !!ДОБАВИТЬ ОСТАЛЬНЫЕ СПИСКИ СТРАНИЦ!! */
+
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
 
 .item-search_input:hover,
 .item-search_input:focus,
@@ -278,6 +288,7 @@ background-color: #f3f7f8;
   text-transform: uppercase;
 
   background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
 } /* нижнее лого */
 
 .analog-text-footer {
