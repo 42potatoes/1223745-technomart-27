@@ -91,7 +91,10 @@ background-color: #f3f7f8;
 
 .reg__list,
 .nav-header__list,
-.registration__info {
+.registration__info,
+.power__list,
+.manufacturer__list,
+.sort__list {
   list-style: none;
 } /* отключение буллитов списка !!ДОБАВИТЬ ОСТАЛЬНЫЕ СПИСКИ СТРАНИЦ!! */
 
@@ -178,9 +181,137 @@ background-color: #f3f7f8;
 }
 
 /* стили для main index.html */
-.section-info {
+.tile--yellow-dark {
+  background-color: #ffbf47;
+}
+
+.tile--blue {
+  background-color: #3bbce3;
+}
+
+.img-slider {
+  background-color: #797c7e;
+} /* на случай, если картинка не загрузится, то серый фон, чтобы оттенить текст*/
+
+.tile--purple {
+  background-color: #dc91d8;
+}
+
+.tile--green {
+  background-color: #8ed78f;
+}
+
+.tile--yellow-light {
+  background-color: #ffc047;
+} /* плитки слайдера */
+
+.text-tiles-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.text-tiles-link:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.text-tiles-link:active{
+  background: rgba(0, 0, 0, 0.3);
+} /* стили текста плиток и фонов при покое, наведении, клике */
+
+.text-link-slider {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.text-link-slider:hover {
+  background-color: #ca2c37;
+}
+
+.text-link-slider:active {
+  background-color: #ba2732;
+} /* стили кнопок на слайдере при покое, наведении, клике*/
+
+.tile__item {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.img-slider-upper {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  background-color: #f9f5f0;
+}
+.section-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.text-section-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+} /*стили для заголовков секций и ссылок*/
+
+.name-cards {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.cards__old-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #999999;
+  text-decoration: line-through;
+}/* стили для старого прайса каточек товара*/
+
+.cards__discount {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.img-man:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   background-color: #ffffff;
 }
+
+.img-man:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
+}
+
+.img-man img:active {
+  opacity: 0.3;
+} /* стили карточек производителя пр наведении, клике*/
+
+.section-info {
+  background-color: #ffffff;
+} /* цвет фона для секции компания техномарт*/
 
 .section-title {
   font-size: 30px;
@@ -188,20 +319,13 @@ background-color: #f3f7f8;
   text-transform: uppercase;
   font-weight: 400;
   color: #000000;
-}
-
-.text-paragraph-section {
-  font-family: "PT Sans", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-}
+} /* стили текста для заголовков секций популярные товары и популярные производители*/
 
 .section-info-list {
   list-style: none;
   line-height: 20px;
   color: #000000;
-}
+} /* стили текста для списка секции компания техномарт*/
 
 .section-info__link-red {
   font-size: 14px;
@@ -210,7 +334,7 @@ background-color: #f3f7f8;
   color: #ffffff;
 
   background-color: #ee3643;
-}
+} /* стили текста и фона для ссылки подробнее о компании секции компания техномарт*/
 
 .section-info__btn-red {
   font-size: 14px;
@@ -219,16 +343,113 @@ background-color: #f3f7f8;
   color: #ffffff;
 
   background-color: #ee3643;
+} /* стили текста и фона для кнопки напишите нам секции контакты*/
+
+.section-service {
+  background-color: #f4f7f9;
+}
+
+.section-title-text {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+} /* стили для заголовков текста секций*/
+
+.section-paragraph-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+} /* стили текста для параграфов секций сервисы, доставка, гарантия, кредит, компания техномарт, контакты*/
+
+.title-tab-text {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #32425c;
+} /* стили текста для заголовков секции табов*/
+
+.list__item a {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+} /* стили текста  и фона для ссылок табов */
+
+.list__item a:hover {
+  background-color: #293449;
+}
+
+.list__item a:focus {
+  color: #32425c;
+
+  background-color: #ffffff;
+} /* стили текста и фона для ссылок табов пр наведении и клике */
+
+.tab-button-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ff5357;
 }
 
 /* стили для main catalog.html */
-.text-breadcrumb-filter-sort-pagination {
+.text-breadcrumb-filter,
+.text-sort-pagination {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-} /* хлебные крошки */
+} /* текст хлебные крошки, фильтр, сортировка, пагинация*/
+
+.filter-font {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+} /*стили для черного текста фильтра*/
+
+.manufacturer__item,
+.power__item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+.background-filter,
+.filter-range,
+.section-sort {
+  background-color: #f7f3ec;
+} /* бежевый фон для блоков текста фильтра, ползунка, сортировки*/
+
+.sort__text {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort__text:hover {
+  color: #000000;
+  text-decoration: underline #ee3643;
+  border-bottom: none;
+}
+
+.sort__text:active {
+  color: #ee3643;
+  text-decoration: none;
+  border-bottom: none;
+} /* стили элементов сортировки при наведении, клике*/
+
 
 .name-page-title {
   background-color: #f2f6f8;
@@ -246,7 +467,7 @@ background-color: #f3f7f8;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
-}
+} /* стили для заголовка карточки*/
 
 .perforator__old-price {
   font-family: "PT Sans", sans-serif;
@@ -263,8 +484,27 @@ background-color: #f3f7f8;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-} /* стили текста карточек товара */
+} /* стили цены карточек товара */
 
+.pagination__item {
+  border: 1px #e5e5e5;
+}
+
+.pagination__item:hover {
+  border: 1px #bdc6ca;
+}
+
+.pagination__item:active {
+  border: 1px #ee3643;
+}
+
+.active-page {
+  background-color: #ee3643;
+}
+
+.about-perforators {
+  background-color: #f2f6f8;
+}
 
 /* стили для footer*/
 .footer-site {

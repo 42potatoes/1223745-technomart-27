@@ -12,7 +12,7 @@
 
       <div class="header-top">
         <div class="header-logo">
-          <a class="header-logo__item" href="#">техномарт</a>
+          <a class="header-logo__item" href="index.html">техномарт</a>
         </div>
         <div class="header-items">
           <div class="item-search">
@@ -93,16 +93,16 @@
     <main class="catalog-main">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="index.html" aria-label="ссылка возвращения на главную"><span class="icon-home"></span><span class="icon-next"></span></a>
+          <a class="text-breadcrumb-filter" href="index.html" aria-label="ссылка возвращения на главную"><span class="icon-home"></span><span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="catalog.html">каталог<span class="icon-next"></span></a>
+          <a class="text-breadcrumb-filter" href="catalog.html">каталог<span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="#">инструмент<span class="icon-next"></span></a>
+          <a class="text-breadcrumb-filter" href="#">инструмент<span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="text-breadcrumb-filter-sort-pagination">перфораторы</a>
+          <a class="text-breadcrumb-filter">перфораторы</a>
         </li>
       </ul>
 
@@ -112,15 +112,15 @@
 
       <section class="section-filter">
         <h2 class="visually-hidden">фильтр товаров</h2>
-        <p class="text-breadcrumb-filter-sort-pagination">фильтр:</p>
+        <p class="text-breadcrumb-filter background-filter">фильтр:</p>
         <p class="filter-font">цена:</p>
 
         <form action="https://echo.htmlacademy.ru/courses" method="get">
 
           <fieldset>
             <legend>цена:</legend>
-            <label for="range">цена</label> <!--скрыть-->
-            <input type="range" min="0" max="30000" name="range" id="range">
+            <label for="range" class="visually-hidden">цена</label> <!--скрыть-->
+            <input type="range" min="0" max="30000" name="range" id="range" class="filter-range">
           </fieldset>
 
           <fieldset class="man-filter manufacturer">
@@ -172,22 +172,22 @@
       </section>
 
       <section class="section-sort sort">
-        <h2 class="text-breadcrumb-filter-sort-pagination">сортировка:</h2>
+        <h2 class="text-sort-pagination">сортировка:</h2>
         <ul class="sort__list">
           <li class="sort__item">
-            <button class="text-breadcrumb-filter-sort-pagination">по цене</button>
+            <a class="text-sort-pagination sort__text" href="#">по цене</a>
           </li>
           <li class="sort__item">
-            <button class="text-breadcrumb-filter-sort-pagination">по типу</button>
+            <a class="text-sort-pagination sort__text" href="#">по типу</a>
           </li>
           <li class="sort__item">
-            <button class="text-breadcrumb-filter-sort-pagination">по функционалу</button>
+            <a class="text-sort-pagination sort__text" href="#">по функционалу</a>
           </li>
           <li class="sort__item">
-            <button></button>
+            <a href="#"></a>
           </li>
           <li class="sort__item">
-            <button></button>
+            <a href="#"></a>
           </li>
         </ul>
       </section>
@@ -299,22 +299,22 @@
 
       <ul class="pagination">
         <li class="pagination__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="#">1</a>
+          <a class="text-sort-pagination active-page" href="#">1</a>
         </li>
         <li class="pagination__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="#">2</a>
+          <a class="text-sort-pagination" href="#">2</a>
         </li>
         <li class="pagination__item">
-          <a class="text-breadcrumb-filter-sort-pagination" href="#">3</a>
+          <a class="text-sort-pagination" href="#">3</a>
         </li>
         <li class="pagination__next">
-          <a class="text-breadcrumb-filter-sort-pagination" href="#">следующая</a>
+          <a class="text-sort-pagination" href="#">следующая</a>
         </li>
       </ul>
 
       <div class="about-perforators">
-        <h3 class="title-tab">пара слов о перфораторах</h3><br>
-        <p class="text-paragraph-section"> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+        <h3 class="section-title-text">пара слов о перфораторах</h3><br>
+        <p class="section-paragraph-text"> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
@@ -324,7 +324,7 @@
       <div class="footer-address">
         <div class="addr">
           <a class="footer-logo" href="#">техномарт</a>
-          <p class="analog-text-header-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <p class="analog-text-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55</p>
         </div>
 
