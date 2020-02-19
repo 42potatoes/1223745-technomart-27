@@ -19,6 +19,29 @@ a {
   text-decoration: none;
 }
 
+ul,
+p,
+img,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.reg__list,
+.nav-header__list,
+.registration__info,
+.power__list,
+.manufacturer__list,
+.sort__list,
+.list,
+.section-info-list,
+.pagination {
+  list-style: none;
+} /* отключение буллитов списка !!ДОБАВИТЬ ОСТАЛЬНЫЕ СПИСКИ СТРАНИЦ!! */
+
 /* стили для header index.html */
 .header {
 background-color: #f3f7f8;
@@ -53,30 +76,33 @@ background-color: #f3f7f8;
   background-color: #63a63e;
 } /* цвет блока оформления заказа */
 
-.header-info .header-info__txt {
-  font-style: italic;
+.header-info__txt {
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
   color: #ee3643;
 }
 
-.header-contacts .header-contacts__tel {
+.header-contacts__tel {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 }
 
-.header-contacts .header-contacts__addr {
+.header-contacts__addr {
   font-size: 14px;
   line-height: 24px;
+  font-style: normal;
   color: #32425c;
 }
 
-.reg__item {
+.reg__list a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-} /* текст в хедере, телефон, адрес, кнопки входа и регистрации */
+
+  background-color: #ffffff;
+}/* текст в хедере, телефон, адрес, кнопки входа и регистрации */
 
 .nav-header {
   background-color: #32425c;
@@ -89,14 +115,6 @@ background-color: #f3f7f8;
   color: #ffffff;
 } /*цвет блока и  одинаковый текст в навигации хедера */
 
-.reg__list,
-.nav-header__list,
-.registration__info,
-.power__list,
-.manufacturer__list,
-.sort__list {
-  list-style: none;
-} /* отключение буллитов списка !!ДОБАВИТЬ ОСТАЛЬНЫЕ СПИСКИ СТРАНИЦ!! */
 
 .header-logo:hover {
   background-color: #ca2c37;
@@ -151,17 +169,14 @@ background-color: #f3f7f8;
 } /* псевдоклассы для оживления элементов хедера */
 
 /*дополнительные стили для catalog.html */
-.header-registration {
-  background-color: #ffffff;
-}
-
 .registration__login {
+  background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
-.registration__info li {
+.registration__info a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
@@ -400,8 +415,12 @@ background-color: #f3f7f8;
 }
 
 /* стили для main catalog.html */
-.text-breadcrumb-filter,
-.text-sort-pagination {
+.breadcrumbs__item a,
+.background-filter,
+.sort__caption,
+.sort__item,
+.pagination__item a {
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -418,6 +437,7 @@ background-color: #f3f7f8;
   text-transform: uppercase;
 } /*стили для черного текста фильтра*/
 
+
 .manufacturer__item,
 .power__item {
   font-family: "PT Sans", sans-serif;
@@ -433,18 +453,21 @@ background-color: #f3f7f8;
   background-color: #f7f3ec;
 } /* бежевый фон для блоков текста фильтра, ползунка, сортировки*/
 
-.sort__text {
+.sort__item a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
 }
 
-.sort__text:hover {
+.sort__item a:hover {
   color: #000000;
   text-decoration: underline #ee3643;
   border-bottom: none;
 }
 
-.sort__text:active {
+.sort__item a:active {
   color: #ee3643;
   text-decoration: none;
   border-bottom: none;
@@ -486,23 +509,8 @@ background-color: #f3f7f8;
   color: #ffffff;
 } /* стили цены карточек товара */
 
-.pagination__item {
-  border: 1px #e5e5e5;
-}
 
-.pagination__item:hover {
-  border: 1px #bdc6ca;
-}
-
-.pagination__item:active {
-  border: 1px #ee3643;
-}
-
-.active-page {
-  background-color: #ee3643;
-}
-
-.about-perforators {
+.section-about-perforators {
   background-color: #f2f6f8;
 }
 
@@ -522,8 +530,8 @@ background-color: #f3f7f8;
 } /* отключение буллитов списка футера*/
 
 .footer-logo {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 23px;
+  line-height: 23px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -566,6 +574,475 @@ background-color: #f3f7f8;
 .copyright .text-footer--yellow:active {
   color: #ee3643;
 } /* изменение цвета с белого на красный ссылок на почту и ссылку на сайт при клике*/
+
+
+/*СЕТКА И ФЛЕКСЫ*/
+
+.body-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.retreat-wrapper {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.header {
+  min-height: 320px;
+}
+
+.header-top {
+  max-height: 42px;
+  padding-left: 130px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  min-width: 220px;
+  text-align: center;
+  padding-top: 11px;
+  margin-left: 0;
+}
+
+.header-items__search {
+  width: 270px;
+}
+
+.header-items__bookmarks,
+.header-items__recycle,
+.header-items__order {
+  width: 150px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 10px;
+} /*верхняя часть хедера*/
+
+.header-middle {
+  margin-top: 46px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.header-info {
+  width: 267px;
+  min-height: 60px;
+  margin-left: 53px;
+}
+
+
+.header-contacts {
+  width: 270px;
+  text-align: center;
+}
+
+.header-contacts__tel{
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 71px;
+  padding-right: 49px;
+  border: 3px solid #ffffff;
+}
+
+.header-contacts__addr {
+  margin-top: 10px;
+}
+
+.reg__list {
+  width: 281px;
+  margin-left: 69px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reg__item-entry {
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+  padding-right: 27px;
+}
+
+.reg__item-reg {
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+} /*средняя часть хедера*/
+
+.nav-header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-header__item {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+/*нижняя часть хедера*/
+
+/* main */
+/*часть main для index.html*/
+.section-info {
+  margin-top: 82px;
+  margin-bottom: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.info-contacts {
+  padding-left: 120px;
+  width: 300px;
+}
+
+.about-technomart p:nth-of-type(1) {
+  margin-top: 38px;
+}
+
+.about-technomart p:nth-of-type(2) {
+  margin-top: 36px;
+}
+
+.section-info-list {
+  margin-top: 25px;
+}
+
+.section-info-list li {
+  margin-top: 21px;
+}
+
+.section-info-list li:nth-child(1) {
+  margin-top: 0px;
+}
+
+.section-info-list li:nth-child(3) {
+  margin-bottom: 37px;
+}
+
+.section-info__link-red {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 41px;
+  padding-right: 40px;
+} /*левая часть секции section-info*/
+
+.info-contacts p:nth-of-type(1) {
+  padding-top: 38px;
+  padding-bottom: 36px;
+}
+
+.info-contacts img {
+  margin-bottom: 40px;
+}
+
+.section-info__btn-red {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 63px;
+  padding-right: 59px;
+  border: 0px;
+}/*правая часть секции section-info*/
+
+
+/*футер*/
+.footer-site {
+min-height: 298px;
+}
+
+.footer-address {
+  margin-bottom: 53px;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer-addr {
+  width: 330px;
+  padding-top: 32px;
+}
+
+.nav-footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-footer__item {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.nav-footer__item:nth-child(1) {
+  margin-left: 68px;
+}
+
+.products__list {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products__item {
+  margin-left: 60px;
+}
+
+.products__item:nth-child(1) {
+  margin-left: 91px;
+}/*верхняя часть футера*/
+
+.copyright {
+  min-height: 105px;
+  padding-left: 130px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  width: 228px;
+  margin-top: 39px;
+}
+
+.social {
+  width: 130px;
+  margin-top: 39px;
+}
+
+.reverse-link {
+  width: 284px;
+  margin-top: 39px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reverse-link__email {
+  width: 135px;
+}
+
+.reverse-link__site {
+  width: 96px;
+} /*конец футера*/
+
+
+
+/*CATALOG.HTML*/
+
+/*часть хедера для catalog.html*/
+.registration {
+  margin-left: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.registration__login {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 47px;
+  padding-right: 66px;
+}
+
+.registration__info {
+  width: 208px;
+  margin-top: 8px;
+  margin-left: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*часть main для catalog.html*/
+
+.breadcrumbs {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.breadcrumbs__item:nth-child(2) {
+  margin-left: 41px;
+}
+
+.breadcrumbs__item:nth-child(3) {
+  margin-left: 39px;
+}
+
+.breadcrumbs__item:nth-child(4) {
+  margin-left: 43px;
+} /*хлебные крошки*/
+
+.section-title {
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+  padding-right: 742px;
+}
+
+.section-filter {
+margin-top: 20px;
+} /*секция фильтр*/
+
+.background-filter {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 149px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+} /*рамка fieldset*/
+
+.power {
+  border: none;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+} /*обертка для блоков фильтр, сортировки и секции с товаром*/
+
+
+.section-sort-man {
+  width: 700px;
+  margin-left: 20px;
+  margin-top: 20px;
+} /*обертка для блоков сортировки и секции с товаром*/
+
+.section-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+} /*секция сортировки*/
+
+.sort__caption {
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-right: 139px;
+} /*заголовок секции*/
+
+.sort__list {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}/*список сортировки*/
+
+.sort__item:nth-child(1) {
+  padding-right: 71px;
+}
+
+.sort__item:nth-child(2) {
+  padding-right: 65px;
+}
+
+.sort__item:nth-child(3) {
+  padding-right: 106px;
+}
+
+.section-perforators > .perforators__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}/*список карточек перфораторов*/
+
+.perforators__item {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}/*карточка перфоратора*/
+
+.perforator-name {
+  margin-top: 10px;
+}/*название перфоратора*/
+
+.perforator__old-price {
+  padding-top: 10px;
+} /*старый прайс перфоратора*/
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pagination__item {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 52px;
+  margin-bottom: 60px;
+  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination__item:nth-child(4) {
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.pagination__item:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination__item:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination__item:nth-child(1) {
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+} /*пагинация*/
+
+.section-about-perforators {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.about-perforators {
+  padding-top: 65px;
+  margin-bottom: 31px;
+}
+
+.paragraph-perforators {
+  padding-bottom: 73px;
+} /*конец main catalog.html*/
+
 
 
 
