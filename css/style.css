@@ -15,32 +15,15 @@ body {
   display: none;
 }
 
-a {
-  text-decoration: none;
+.container {
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
-ul,
-p,
-img,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0px;
-  padding: 0px;
+.retreat-wrapper {
+  width: 940px;
+  margin: 0 auto;
 }
-
-.reg__list,
-.nav-header__list,
-.registration__info,
-.power__list,
-.manufacturer__list,
-.sort__list,
-.list,
-.section-info-list,
-.pagination {
-  list-style: none;
-} /* отключение буллитов списка !!ДОБАВИТЬ ОСТАЛЬНЫЕ СПИСКИ СТРАНИЦ!! */
 
 /* стили для header index.html */
 .header {
@@ -51,9 +34,9 @@ background-color: #f3f7f8;
   background-color: #293449;
 } /* фон футера в самом верху */
 
-.header-logo {
+.header-logo__item {
   background-color: #ee3643;
-  box-shadow: 0 5px 0 0 #b52933;
+  border-bottom: 5px solid #b52933;
 }
 
  .header-logo__item {
@@ -61,6 +44,7 @@ background-color: #f3f7f8;
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 } /* фон логотипа футера и шрифт */
 
 .item-search_input {
@@ -72,9 +56,7 @@ background-color: #f3f7f8;
   color: #ffffff;
 } /* стили для поля поиска */
 
-.header-items__order {
-  background-color: #63a63e;
-} /* цвет блока оформления заказа */
+
 
 .header-info__txt {
   font-size: 16px;
@@ -102,11 +84,19 @@ background-color: #f3f7f8;
   color: #000000;
 
   background-color: #ffffff;
-}/* текст в хедере, телефон, адрес, кнопки входа и регистрации */
+}
+
+.reg__list a:hover {
+  color: #ee3643;
+}
+
+.reg__list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* текст в хедере, телефон, адрес, кнопки входа и регистрации */
 
 .nav-header {
   background-color: #32425c;
-  box-shadow: 0 5px 0 0 #293449;
 }
 
 .analog-text-header {
@@ -116,39 +106,12 @@ background-color: #f3f7f8;
 } /*цвет блока и  одинаковый текст в навигации хедера */
 
 
-.header-logo:hover {
+.header-logo__item:hover {
   background-color: #ca2c37;
 }
 
-.header-logo:active {
+.header-logo__item:active {
   background-color: #ba2732;
-}
-
-.item-search_input:hover,
-.item-search_input:focus,
-.header-items__bookmarks:hover,
-.header-items__recycle:hover,
-.header-items__bookmarks:focus,
-.header-items__recycle:focus {
-  background-color: #212a3a;
-}
-
-.item-search_input:focus {
-  background-color: #ffffff;
-}
-
-.header-items__bookmarks:active,
-.header-items__recycle:active {
-  background-color: #161d29;
-}
-
-.header-items__order:hover,
-.header-items__order:focus {
-  background-color: #5fbb2d;
-}
-
-.header-items__order:active {
-  background-color: #518534;
 }
 
 .reg__item-btn__text:hover {
@@ -203,10 +166,6 @@ background-color: #f3f7f8;
 .tile--blue {
   background-color: #3bbce3;
 }
-
-.img-slider {
-  background-color: #797c7e;
-} /* на случай, если картинка не загрузится, то серый фон, чтобы оттенить текст*/
 
 .tile--purple {
   background-color: #dc91d8;
@@ -310,17 +269,17 @@ background-color: #f3f7f8;
   color: #ffffff;
 }
 
-.img-man:hover {
+.man__item a:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   background-color: #ffffff;
 }
 
-.img-man:active {
+.man__item a:active {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   background-color: #ffffff;
 }
 
-.img-man img:active {
+.man__item a:active {
   opacity: 0.3;
 } /* стили карточек производителя пр наведении, клике*/
 
@@ -342,7 +301,7 @@ background-color: #f3f7f8;
   color: #000000;
 } /* стили текста для списка секции компания техномарт*/
 
-.section-info__link-red {
+.about-technomart a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -351,7 +310,7 @@ background-color: #f3f7f8;
   background-color: #ee3643;
 } /* стили текста и фона для ссылки подробнее о компании секции компания техномарт*/
 
-.section-info__btn-red {
+.info-contacts button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -403,7 +362,12 @@ background-color: #f3f7f8;
   color: #32425c;
 
   background-color: #ffffff;
-} /* стили текста и фона для ссылок табов пр наведении и клике */
+}
+
+.list__item a:target {
+  background-color: #ffffff;
+}
+/* стили текста и фона для ссылок табов пр наведении и клике */
 
 .tab-button-text {
   font-size: 14px;
@@ -418,7 +382,7 @@ background-color: #f3f7f8;
 .breadcrumbs__item a,
 .background-filter,
 .sort__caption,
-.sort__item,
+.sort__item button,
 .pagination__item a {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
@@ -453,21 +417,20 @@ background-color: #f3f7f8;
   background-color: #f7f3ec;
 } /* бежевый фон для блоков текста фильтра, ползунка, сортировки*/
 
-.sort__item a {
+.sort__item button {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted #ee3643;
 }
 
-.sort__item a:hover {
+.sort__item button:hover {
   color: #000000;
   text-decoration: underline #ee3643;
   border-bottom: none;
 }
 
-.sort__item a:active {
+.sort__item button:active {
   color: #ee3643;
   text-decoration: none;
   border-bottom: none;
@@ -536,7 +499,6 @@ background-color: #f3f7f8;
   text-transform: uppercase;
 
   background-color: #ee3643;
-  box-shadow: 0 5px 0 0 #b52933;
 } /* нижнее лого */
 
 .analog-text-footer {
@@ -583,29 +545,26 @@ background-color: #f3f7f8;
   margin: 0 auto;
 }
 
-.retreat-wrapper {
-  margin-left: 130px;
-  margin-right: 130px;
-}
 
 .header {
   min-height: 320px;
 }
 
 .header-top {
-  max-height: 42px;
-  padding-left: 130px;
-  padding-right: 130px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
 .header-logo {
-  min-width: 220px;
-  text-align: center;
-  padding-top: 11px;
-  margin-left: 0;
+  padding-top: 9px;
+}
+
+.header-logo__item {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 55px;
+  padding-right: 56px;
 }
 
 .header-items__search {
@@ -616,24 +575,63 @@ background-color: #f3f7f8;
 .header-items__recycle,
 .header-items__order {
   width: 150px;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 10px;
-} /*верхняя часть хедера*/
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #293449;
+
+}
+
+.header-items__order {
+  background-color: #63a63e;
+}
+
+.header-items__bookmarks:hover,
+.header-items__bookmarks:focus,
+.header-items__recycle:hover,
+.header-items__recycle:focus {
+  width: 150px;
+  height: 42px;
+  background-color: #212a3a;
+
+}
+
+.item-search_input:focus {
+  background-color: #ffffff;
+}
+
+.header-items__bookmarks:active,
+.header-items__recycle:active {
+  background-color: #161d29;
+}
+
+.header-items__order:hover,
+.header-items__order:focus {
+  background-color: #5fbb2d;
+}
+
+.header-items__order:active {
+  background-color: #518534;
+}/* цвет блока оформления заказа */
+
+
+/*верхняя часть хедера*/
 
 .header-middle {
+  width: 940px;
   margin-top: 46px;
   margin-bottom: 44px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: baseline;
 }
 
 .header-info {
-  width: 267px;
+  width: 196px;
   min-height: 60px;
   margin-left: 53px;
+  margin-right: 71px;
 }
 
 
@@ -679,19 +677,219 @@ background-color: #f3f7f8;
 .nav-header__list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
+}
+.nav-header__item {
+  flex-basis: 25%;
 }
 
-.nav-header__item {
-  padding-top: 20px;
-  padding-bottom: 18px;
-  padding-left: 31px;
-  padding-right: 31px;
+.nav-header__item a {
+  height: 55px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #293449;
 }
 /*нижняя часть хедера*/
 
 /* main */
-/*часть main для index.html*/
+.tile {
+  margin-top: 59px;
+  margin-bottom: 53px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-column {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tile__size {
+  width: 300px;
+  min-height: 123px;
+}
+
+.tile__item {
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-left: 23px;
+} /*отступы внутри плитки для названий*/
+
+
+.text-tiles-link {
+  width: 135px;
+  height: 38px;
+  margin-left: 23px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* размеры кнопок-ссылок в плитках*/
+
+.tile--slider {
+  width: 620px;
+}
+
+.tile-drill img {
+  margin-top: 20px;
+  display: block;
+  background-color: #797c7e;
+} /*если картинка слайдера не загрузится - юз серый фон*/
+
+.tile-drill {
+  position: relative;
+}
+
+.tile-drill p {
+  position: absolute;
+  left: 40px;
+  bottom: 184px;
+} /*размещение параграфа на изображении слайдера */
+
+.text-link-slider {
+  width: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 49px;
+  padding-right: 45px;
+  border-radius: 3px;
+} /*отступы для ссылки открыть каталог на слайдере*/
+
+.tile-drill a {
+  position: absolute;
+  left: 40px;
+  bottom: 22px;
+  width: auto;
+}/*размещение ссылки открыть каталог на изображении слайдера */
+
+.tile-perforator {
+  position: relative;
+}
+
+.tile-perforator p {
+  position: absolute;
+  left: 40px;
+  bottom: 184px;
+}
+
+.tile-perforator a {
+  position: absolute;
+  left: 40px;
+  bottom: 22px;
+  width: auto;
+}
+/*слайдер внутри с плитками*/
+
+
+.section-heading {
+  height: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-heading h2 {
+  margin-left: 30px;
+}
+
+.text-section-link {
+  width: 253px;
+  height: 38px;
+  margin-right: 24px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /*стили для блоков названи секций, заголовков и ссылок*/
+
+.cards {
+  margin-top: 20px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cards__item {
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}/*карточка перфоратора*/
+
+.name-cards {
+  margin-top: 10px;
+}/*название перфоратора*/
+
+.cards__old-price {
+  padding-top: 10px;
+} /*старый прайс перфоратора*/
+
+.man__list {
+  margin-bottom: 85px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.man__item {
+  width: 220px;
+  height: 145px;
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+ } /*ширина блоков списка*/
+
+.man__item  a {
+  width: 220px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} /*ширина ссылки списка производителей*/
+
+.section-service h2 {
+  padding-top: 63px;
+  margin-bottom: 30px;
+}
+
+.tabs__service {
+  height: 279px;
+  margin-top: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.list__item a {
+  display: block;
+  width: 240px;
+  height: 61px;
+  border-bottom: 1px solid #293449;
+}
+
+.tabs__body {
+  padding-left: 80px;
+}
+
+.tabs__body p {
+  margin-top: 28px;
+} /*отступ от заголовков табов до параграфов*/
+
+.tabs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+/*нижняя часть main для index.html*/
 .section-info {
   margin-top: 82px;
   margin-bottom: 86px;
@@ -705,54 +903,46 @@ background-color: #f3f7f8;
   width: 300px;
 }
 
-.about-technomart p:nth-of-type(1) {
-  margin-top: 38px;
-}
+.section-info h3 {
+  margin-bottom: 30px;
+} /*отступы снизу от заголовков section-info*/
 
-.about-technomart p:nth-of-type(2) {
-  margin-top: 36px;
-}
+.section-info p:nth-of-type(1) {
+  margin-bottom: 34px;
+} /*отступ вниз первых параграфов в section-info*/
 
-.section-info-list {
+.section-info-list{
   margin-top: 25px;
 }
+.info-contacts img {
+  display: block;
+  background-color: #797c7e;
+} /*блок чтобы убрать отступ, серый фон, если не загрузится изображение*/
 
 .section-info-list li {
-  margin-top: 21px;
-}
-
-.section-info-list li:nth-child(1) {
-  margin-top: 0px;
+  padding-bottom: 20px;
 }
 
 .section-info-list li:nth-child(3) {
+  padding-bottom: 0px;
   margin-bottom: 37px;
 }
 
-.section-info__link-red {
+.about-technomart a {
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 41px;
   padding-right: 40px;
-} /*левая часть секции section-info*/
+} /*ссылка подробнее о компании секции section-info*/
 
-.info-contacts p:nth-of-type(1) {
-  padding-top: 38px;
-  padding-bottom: 36px;
-}
-
-.info-contacts img {
-  margin-bottom: 40px;
-}
-
-.section-info__btn-red {
+.info-contacts button {
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 63px;
   padding-right: 59px;
+  margin-top: 40px;
   border: 0px;
-}/*правая часть секции section-info*/
-
+}/*кнопка напиши нам секции section-info*/
 
 /*футер*/
 .footer-site {
@@ -761,8 +951,6 @@ min-height: 298px;
 
 .footer-address {
   margin-bottom: 53px;
-  margin-left: 130px;
-  margin-right: 130px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -779,6 +967,7 @@ min-height: 298px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  border-bottom: 5px solid #b52933;
 }
 
 .footer-addr {
@@ -817,9 +1006,8 @@ min-height: 298px;
 }/*верхняя часть футера*/
 
 .copyright {
-  min-height: 105px;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-top: 39px;
+  padding-bottom: 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -827,17 +1015,14 @@ min-height: 298px;
 
 .copyright__text {
   width: 228px;
-  margin-top: 39px;
 }
 
 .social {
   width: 130px;
-  margin-top: 39px;
 }
 
 .reverse-link {
   width: 284px;
-  margin-top: 39px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -853,7 +1038,7 @@ min-height: 298px;
 
 
 
-/*CATALOG.HTML*/
+/*catalog.html*/
 
 /*часть хедера для catalog.html*/
 .registration {
@@ -901,7 +1086,7 @@ min-height: 298px;
   margin-left: 43px;
 } /*хлебные крошки*/
 
-.section-title {
+.name-page-title h1 {
   padding-top: 32px;
   padding-bottom: 34px;
   padding-left: 30px;
@@ -956,10 +1141,17 @@ fieldset {
 .sort__list {
   padding-top: 11px;
   padding-bottom: 12px;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
 }/*список сортировки*/
+
+.sort__item button {
+  padding: 0px;
+  background: none;
+  border: none;
+  border-bottom: 1px dotted #ee3643;
+}
 
 .sort__item:nth-child(1) {
   padding-right: 71px;
@@ -970,7 +1162,7 @@ fieldset {
 }
 
 .sort__item:nth-child(3) {
-  padding-right: 106px;
+  padding-right: 46px;
 }
 
 .section-perforators > .perforators__list {
@@ -1029,10 +1221,6 @@ fieldset {
   border: 1px solid #ee3643;
 } /*пагинация*/
 
-.section-about-perforators {
-  padding-left: 130px;
-  padding-right: 130px;
-}
 
 .about-perforators {
   padding-top: 65px;

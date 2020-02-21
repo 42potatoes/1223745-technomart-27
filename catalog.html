@@ -10,9 +10,9 @@
   <body class="body-wrapper">
     <header class="header">
 
-      <div class="header-top">
+      <div class="header-top container">
         <div class="header-logo">
-          <a class="header-logo__item" href="#">техномарт</a>
+          <a class="header-logo__item" href="index.html">техномарт</a>
         </div>
         <div class="header-items__search">
           <form action="https://echo.htmlacademy.ru/courses" method="get">
@@ -20,18 +20,14 @@
             <input class="item-search_input" type="search" name="search" id="search"  placeholder="Поиск:">
           </form>
         </div>
-        <div class="header-items__bookmarks">
-          <a class="analog-text-header" href="#">Закладки: 0</a>
-          <span class="header-style-icon icon-bookmarks"></span>
-        </div>
-        <div class="header-items__recycle">
-          <a class="analog-text-header" href="#">Корзина: 0</a>
-          <span class="header-style-icon icon-recycle"></span>
-        </div>
-        <div class="header-items__order">
-          <a class="analog-text-header" href="#">Оформить заказ</a>
-          <span class="header-style-icon icon-order"></span>
-        </div>
+        <a class="header-items__bookmarks analog-text-header" href="#">Закладки: 0</a>
+            <span class="header-style-icon icon-bookmarks"></span>
+
+            <a class="header-items__recycle analog-text-header" href="#">Корзина: 0</a>
+            <span class="header-style-icon icon-recycle"></span>
+
+            <a class="header-items__order analog-text-header" href="#">Оформить заказ</a>
+            <span class="header-style-icon icon-order"></span>
     </div>
 
     <div class="header-middle retreat-wrapper">
@@ -101,7 +97,7 @@
           <a href="#">инструмент<span class="icon-next"></span></a>
         </li>
         <li class="breadcrumbs__item">
-          <a>перфораторы</a>
+          <a href="#">перфораторы</a>
         </li>
       </ul>
 
@@ -177,19 +173,19 @@
             <h2 class="sort__caption">сортировка:</h2>
             <ul class="sort__list">
               <li class="sort__item">
-                <a href="#">по цене</a>
+                <button type="button">по&nbsp;цене</button>
               </li>
               <li class="sort__item">
-                <a href="#">по типу</a>
+                <button type="submit">по&nbsp;типу</button>
               </li>
               <li class="sort__item">
-                <a href="#">по функционалу</a>
+                <button type="submit">по&nbsp;функционалу</button>
               </li>
               <li class="sort__item">
-                <a href="#"></a>
+                <button type="submit"><span class="sort-up"></span></button>
               </li>
               <li class="sort__item">
-                <a href="#"></a>
+                <button type="submit"><span class="sort-down"></span></button>
               </li>
             </ul>
           </section>
@@ -334,7 +330,7 @@
       </div>
 
 
-      <section class="section-about-perforators">
+      <section class="section-about-perforators container">
         <h3 class="section-title-text about-perforators">пара слов о перфораторах</h3>
         <p class="section-paragraph-text paragraph-perforators"> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
@@ -343,7 +339,7 @@
     </main>
     <footer class="footer-site">
 
-      <div class="footer-address">
+      <div class="footer-address retreat-wrapper">
         <div class="addr">
           <a class="footer-logo" href="#">техномарт</a>
           <p class="footer-addr analog-text-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -386,7 +382,7 @@
         </div>
       </div>
 
-      <div class="copyright">
+      <div class="copyright container">
         <p class="copyright__text">© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <div class="social">
