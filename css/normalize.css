@@ -376,3 +376,7 @@ img {
 fieldset {
   padding: 0px;
 }
+
+input {
+  padding: 0px;
+}
