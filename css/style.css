@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -259,7 +259,7 @@ background-color: #f3f7f8;
 } /*стили для заголовков секций и ссылок*/
 
 .name-cards {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -267,7 +267,7 @@ background-color: #f3f7f8;
 }
 
 .cards__old-price {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -277,7 +277,7 @@ background-color: #f3f7f8;
 
 .cards__price,
 .perforator__price {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -346,7 +346,7 @@ background-color: #f3f7f8;
 } /* стили для заголовков текста секций*/
 
 .section-paragraph-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -392,7 +392,7 @@ background-color: #f3f7f8;
 .sort__caption,
 .sort__item button,
 .pagination__item a {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -401,7 +401,7 @@ background-color: #f3f7f8;
 } /* текст хлебные крошки, фильтр, сортировка, пагинация*/
 
 .filter-font {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -412,7 +412,7 @@ background-color: #f3f7f8;
 
 .manufacturer__item,
 .power__item {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -457,7 +457,7 @@ background-color: #f3f7f8;
 } /* заголовок страницы */
 
 .perforator-name {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -465,7 +465,7 @@ background-color: #f3f7f8;
 } /* стили для заголовка карточки*/
 
 .perforator__old-price {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -474,7 +474,7 @@ background-color: #f3f7f8;
 }
 
 .perforator__discount {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -662,6 +662,14 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-top: 13px;
   padding-bottom: 11px;
   background-color: #293449;
+}
+
+.recycle-catalog {
+  display: block;
+  width: 150px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background-color: #ee3643;
 }
 
 .header-items__order {
@@ -1898,6 +1906,11 @@ min-height: 298px;
   background-repeat: no-repeat;
 }
 
+.breadcrumbs__item .icon-home:active,
+.breadcrumbs__item .icon-home:focus {
+  outline: inherit;
+}
+
 .icon-home::after {
   content: "";
   position: absolute;
@@ -1909,6 +1922,8 @@ min-height: 298px;
   background-image: url("/img/icon-right-scrumbs.svg");
   background-repeat: no-repeat;
 }
+
+
 
 .breadcrumbs__item:nth-child(2) {
   position: relative;
@@ -2023,7 +2038,7 @@ min-height: 298px;
 }
 
 .filter-font-range {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -2049,6 +2064,7 @@ min-height: 298px;
   margin-top: 9px;
   width: 95px;
   height: 38px;
+
   background-color:#f7f3ec;
 }
 
@@ -2238,7 +2254,7 @@ fieldset {
   margin-top: 59px;
   width: 140px;
   height: 38px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -2415,7 +2431,7 @@ fieldset {
 }
 
 .hover-pay {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2433,7 +2449,7 @@ fieldset {
 }
 
 .hover-bookmarks {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2515,6 +2531,7 @@ fieldset {
   align-items: center;
   align-content: center;
   justify-content: flex-start;
+
   background-color: #ffffff;
 }
 
@@ -2557,6 +2574,7 @@ fieldset {
   margin-top: 53px;
   margin-bottom: 60px;
   margin-right: 10px;
+
   border: 1px solid #e5e5e5;
 }
 
@@ -2602,7 +2620,7 @@ fieldset {
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 textarea[name="comment"]::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -2616,12 +2634,12 @@ textarea[name="comment"]::placeholder {
 }
 
 .form-write-us {
-  z-index: 20;
   display: none;
   width: 620px;
   bottom: 206px;
   margin-left: 289px;
   border-top: 7px solid #ee3643;
+  z-index: 20;
 }
 
 .modal-close {
@@ -2630,9 +2648,11 @@ textarea[name="comment"]::placeholder {
   right: 9px;
   width: 21px;
   height: 21px;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 23;
 }
 
 .modal-close::before,
@@ -2701,6 +2721,7 @@ textarea[name="comment"]::placeholder {
 
 .window-form__btn {
   margin-top: 37px;
+
   background-color: #f4f4f4;
 }
 
@@ -2722,12 +2743,13 @@ textarea[name="comment"]::placeholder {
   margin-right: 80px;
   border: none;
   border-radius: 3px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+
   background-color: #ee3643;
 }
 
@@ -2755,6 +2777,17 @@ textarea[name="comment"]::placeholder {
   box-shadow: 0px 1px 15px 0 rgba(0, 0, 0, 0.45);
 }
 
+.modal-map iframe {
+  position: absolute;
+  border: none;
+  z-index: 2;
+}
+
+.modal-map img {
+  position: absolute;
+  z-index: 1;
+}
+
 /*всплывающее окно добавлен в корзину*/
 .modal-info-add {
   display: none;
@@ -2770,7 +2803,7 @@ textarea[name="comment"]::placeholder {
   margin-bottom: 68px;
   margin-left: 179px;
   margin-right: 125px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -2805,7 +2838,7 @@ textarea[name="comment"]::placeholder {
 .modal-info-add__btns button {
   width: 220px;
   height: 38px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;

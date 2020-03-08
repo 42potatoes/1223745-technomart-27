@@ -1,4 +1,3 @@
-
 var link = document.querySelector(".button-write-us");
 
 if (link) {
@@ -71,12 +70,12 @@ var popupInfo = document.querySelector(".modal-info-add");
 var closeCatalog = popupInfo.querySelector(".modal-close");
 var purchase = popupInfo.querySelector(".modal-btn-continue");
 
-for (var elem of button) {
-  elem.addEventListener("click", function (evt) {
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     popupInfo.classList.add("modal-show");
-  });
-};
+});
+}
 
 closeCatalog.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -99,7 +98,6 @@ window.addEventListener("keydown", function (evt) {
 
 }
 
-    //код для index.html
 
 
 
