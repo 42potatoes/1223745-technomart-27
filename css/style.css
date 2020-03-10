@@ -57,14 +57,24 @@ background-color: #f3f7f8;
 } /* фон логотипа футера и шрифт */
 
 .item-search_input {
+  color: #ffffff;
   background-color: #293449;
   border: none;
+}
+
+.item-search_input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.item-search_input::-ms-input-placeholder {
+  color: #ffffff;
 }
 
 .item-search_input::placeholder {
   color: #ffffff;
   opacity: 1;
 }
+
 /* стили для поля поиска */
 
 .header-info {
@@ -2626,6 +2636,16 @@ fieldset {
   color: #000000;
 }
 
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+textarea[name="comment"]:-ms-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #a9a9a9;
+}
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 textarea[name="comment"]::placeholder {
@@ -2634,6 +2654,7 @@ textarea[name="comment"]::placeholder {
   line-height: 18px;
   font-weight: 400;
   color: #a9a9a9;
+  opacity: 1;
 }
 
 .modal-window {
@@ -2704,6 +2725,9 @@ textarea[name="comment"]::placeholder {
 }
 
 .window-form__items input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
   height: 38px;
   margin-top: 9px;
   box-sizing: inherit;
@@ -2724,6 +2748,8 @@ textarea[name="comment"]::placeholder {
   width: 460px;
   height: 114px;
   margin-top: 10px;
+  padding-top: 8px;
+  padding-left: 14px;
   resize: none;
   border: 2px solid #d7dcde;
 }
@@ -2732,17 +2758,6 @@ textarea[name="comment"]::placeholder {
   margin-top: 37px;
 
   background-color: #f4f4f4;
-}
-
-.window-form input::placeholder {
-  line-height: 30px;
-
-  border-left: 15px solid transparent;
-}
-.window-form textarea::placeholder {
-  line-height: 30px;
-
-  border-left: 12px solid transparent;
 }
 
 .window-form__btn button {
