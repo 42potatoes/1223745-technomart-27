@@ -63,7 +63,9 @@ background-color: #f3f7f8;
 
 .item-search_input::placeholder {
   color: #ffffff;
-} /* стили для поля поиска */
+  opacity: 1;
+}
+/* стили для поля поиска */
 
 .header-info {
   font-size: 16px;
@@ -2734,11 +2736,13 @@ textarea[name="comment"]::placeholder {
 
 .window-form input::placeholder {
   line-height: 30px;
-  text-indent: 15px;
+
+  border-left: 15px solid transparent;
 }
 .window-form textarea::placeholder {
   line-height: 30px;
-  text-indent: 12px;
+
+  border-left: 12px solid transparent;
 }
 
 .window-form__btn button {
