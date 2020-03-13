@@ -1150,6 +1150,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: baseline;
   width: 6px;
   height: 6px;
   background-color: #ffffff;
@@ -1888,11 +1889,12 @@ min-height: 298px;
 }
 
 .registration__cabinet::before {
+  display: inline-block;
+  vertical-align: baseline;
   content: "\2022";
   position: absolute;
   top: 3px;
   left: 90px;
-  display: inline-block;
   color: #32425c;
   font-weight: bold;
 }
