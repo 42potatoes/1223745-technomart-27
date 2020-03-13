@@ -562,8 +562,6 @@ background-color: #f3f7f8;
 /*СЕТКА И ФЛЕКСЫ*/
 
 .body-wrapper {
-  width: 1200px;
-  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -573,12 +571,16 @@ background-color: #f3f7f8;
 }
 
 .header-top {
+  min-height: 42px;
+}
+
+.header-top__wrapper {
+  height: 42px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 42px;
 }
 
 .header-logo__item {
@@ -1356,6 +1358,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .section-service {
   height: 522px;
   overflow: hidden;
+}
+
+.section-service__wrapper {
   position: relative;
 }
 
@@ -1382,7 +1387,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 10px;
   height: 279px;
   top: 192px;
-  left: 360px;
+  left: 230px;
   background-position: 0 0;
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
@@ -1679,6 +1684,9 @@ min-height: 298px;
 .copyright {
   padding-top: 34px;
   padding-bottom: 35px;
+}
+
+.copyright-wrapper {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -2657,6 +2665,9 @@ textarea[name="comment"]::placeholder {
 
 .modal-window {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
@@ -2664,8 +2675,6 @@ textarea[name="comment"]::placeholder {
 .form-write-us {
   display: none;
   width: 620px;
-  bottom: 206px;
-  margin-left: 289px;
   border-top: 7px solid #ee3643;
   z-index: 20;
 }
@@ -2795,8 +2804,6 @@ textarea[name="comment"]::placeholder {
   display: none;
   width: 940px;
   height: 446px;
-  margin-left: 130px;
-  bottom: 361px;
   z-index: 21;
   box-shadow: 0px 1px 15px 0 rgba(0, 0, 0, 0.45);
 }
@@ -2816,8 +2823,6 @@ textarea[name="comment"]::placeholder {
 .modal-info-add {
   display: none;
   width: 620px;
-  margin-left: 290px;
-  top: 411px;
   z-index: 20;
   border-top: 7px solid #ee3643;
 }
@@ -2882,27 +2887,29 @@ textarea[name="comment"]::placeholder {
 }
 
 @keyframes bounce {
+
   0% {
-    transform: translateY(2000px);
+    transform: translate(-50%, 2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, -50%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -45%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
+
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -2910,14 +2917,14 @@ textarea[name="comment"]::placeholder {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(-50%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-55%, -50%);
   }
 }
 
