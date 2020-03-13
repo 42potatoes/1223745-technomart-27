@@ -380,3 +380,7 @@ fieldset {
 input {
   padding: 0px;
 }
+
+fieldset {
+  border: none;
+}

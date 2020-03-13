@@ -2113,10 +2113,6 @@ min-height: 298px;
   padding-right: 150px;
 }
 
-fieldset {
-  border: none;
-}
-
 .man-filter {
   border-bottom: 1px solid #e5e5e5;
 } /*рамка fieldset*/
