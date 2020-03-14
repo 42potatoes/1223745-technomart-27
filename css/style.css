@@ -567,7 +567,7 @@ background-color: #f3f7f8;
 }
 
 .header {
-  min-height: 320px;
+  padding-bottom: 60px;
 }
 
 .header-top {
@@ -846,8 +846,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .reg__item-entry {
   margin-right: 10px;
-  width: 121px;
-  height: 45px;
+  min-width: 121px;
+  min-height: 45px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -857,7 +857,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .reg__item-entry span {
+  padding-top: 10px;
+  padding-bottom: 12px;
   padding-left: 47px;
+  padding-right: 25px;
 }
 
 .item-entry__icon::before {
@@ -900,14 +903,22 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .reg__item-reg {
-  width: 150px;
-  height: 45px;
+  min-width: 150px;
+  min-height: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: center;
-} /*средняя часть хедера*/
+}
+
+.reg__item-reg span {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/*средняя часть хедера*/
 
 .nav-header__list {
   display: flex;
@@ -982,23 +993,34 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .tile__size {
   width: 300px;
-  height: 123px;
+  min-height: 123px;
 }
 
 .tile__item {
   padding-top: 22px;
   padding-bottom: 12px;
   padding-left: 22px;
+  padding-right: 142px;
 } /*отступы внутри плитки для названий*/
 
 .text-tiles-link {
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   margin-left: 24px;
+  margin-right: 142px;
   border-radius: 3px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  align-content: stretch;
   justify-content: center;
+}
+
+.text-tiles-link span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .tile--yellow-dark {
@@ -1236,6 +1258,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: stretch;
   justify-content: space-between;
 }
 
@@ -1246,13 +1269,23 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .text-section-link {
   width: 253px;
-  height: 38px;
+  min-height: 38px;
   margin-right: 24px;
   border-radius: 3px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  align-content: stretch;
   justify-content: center;
-} /*стили для блоков названи секций, заголовков и ссылок*/
+}
+
+.text-section-link span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*стили для блоков названи секций, заголовков и ссылок*/
 
 .cards {
   margin-top: 20px;
@@ -1261,13 +1294,14 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: normal;
+  align-content: stretch;
   justify-content: space-between;
 }
 
 .cards__item {
   position: relative;
   width: 218px;
-  height: 316px;
+  min-height: 316px;
   text-align: center;
   border: 1px solid #e5e5e5;
 }/*карточка перфоратора*/
@@ -1355,13 +1389,9 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 5px;
 }
 
-.section-service {
-  height: 522px;
-  overflow: hidden;
-}
 
 .section-service__wrapper {
-  position: relative;
+
 }
 
 .section-service h2 {
@@ -1369,6 +1399,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .radio-service {
+  height: 353px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1386,7 +1417,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   width: 10px;
   height: 279px;
-  top: 192px;
+  top: -45px;
   left: 230px;
   background-position: 0 0;
   background-image: url("../img/shadow.png");
@@ -1394,7 +1425,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .tabs-service {
-  margin-top: 70px;
+  position: relative;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -1455,7 +1487,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .tabs-body {
   width: 630px;
   height: 300%;
-  margin-top: 70px;
+  margin-top: 67px;
   padding-left: 80px;
   position: relative;
 }
@@ -1577,17 +1609,19 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .about-technomart a {
+  width: 220px;
+  min-height: 38px;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: stretch;
   justify-content: stretch;
-  width: 220px;
-  height: 38px;
   border-radius: 3px;
 }
 
 .about-technomart span {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 41px;
 }
 /*ссылка подробнее о компании секции section-info*/
@@ -1808,7 +1842,7 @@ min-height: 298px;
   align-content: stretch;
   justify-content: stretch;
   width: 299px;
-  height: 45px;
+  min-height: 45px;
 }
 
 .active-login::before {
@@ -1838,8 +1872,11 @@ min-height: 298px;
 }
 
 .active-login {
-  padding-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 47px;
+  padding-right: 35px;
+  word-break: break-all;
 }
 
 .registration__logout {
@@ -2283,6 +2320,7 @@ min-height: 298px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+  word-break: break-all;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -2435,7 +2473,7 @@ min-height: 298px;
 .perforators__item {
   position: relative;
   width: 218px;
-  height: 316px;
+  min-height: 316px;
   margin-top: 20px;
   text-align: center;
   border: 1px solid #e5e5e5;
