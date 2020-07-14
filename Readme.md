@@ -1,6 +1,2 @@
 # Личный проект «Техномарт»
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
-
----
+Github pages https://goodnewseveryone42.github.io/technomart/
